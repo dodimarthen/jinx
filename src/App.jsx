@@ -1,15 +1,5 @@
 import React from "react";
-
-const Button = (props) => {
-  return (
-    <button
-      className={`h-10 px-6 font-semibold rounded-md ${props.variant} text-white`}
-      type="submit"
-    >
-      {props.text}
-    </button>
-  );
-};
+import Button from "./components/Elements/Button/Button";
 
 function App() {
   return (
@@ -17,6 +7,7 @@ function App() {
       <div className="flex gap-x-5">
         <Button variant="bg-red-700" text="login"></Button>
         <Button variant="bg-green-700" text="logout"></Button>
+        <Button variant="bg-yellow-500" text="forget password"></Button>
       </div>
     </div>
   );
